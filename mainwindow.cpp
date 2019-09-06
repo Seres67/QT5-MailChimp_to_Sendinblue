@@ -29,7 +29,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 void MainWindow::on_locatebtn_pressed()
 {
-    QString file = QFileDialog::getOpenFileName(this, tr("Find Files"), QDir::currentPath());
+    QString file = QFileDialog::getOpenFileName(this, tr("Find Files"), QDir::homePath());
     ui->pathview->setPlainText(file);
 }
 
